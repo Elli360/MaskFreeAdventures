@@ -1,6 +1,13 @@
 # Project-1
-
+![](https://specials-images.forbesimg.com/imageserve/1218246658/960x0.jpg?fit=scale)
 ```
+Team Codename:
+The Coding Covids
+
+Team Members:
+Luis Calderin, Farrah Heath, Danielli Franquim
+
+Project Description:
 ## User Story
 
 ```
