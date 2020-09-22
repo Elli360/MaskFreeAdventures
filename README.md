@@ -77,5 +77,9 @@ THEN I am presented with a modal displaying risk level
 ## Screenshots
 
 ![](img/intro.png)
+<br>
+![](img/modal.png)
+<br>
+![](img/parks.png)
 
 
