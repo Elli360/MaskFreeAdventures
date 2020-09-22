@@ -14,7 +14,7 @@
   <!-- Sub Navigation -->
   <div class="top-bar">
     <div class="top-bar-left">
-     
+     <h3>Fellow Travelers...</h3>
     </div>
    
   </div>
@@ -27,11 +27,14 @@
     </div>
     <div class="medium-8 columns">
       <h2>Mask Free Adventures</h2>
-      <P>With the pandemic at large social and economic activities have been adversely affected. There’s no indication to whether this virus will subside or worsen. This website should keep you in the know. With the latest CDC and WHO updates it will help you decide whether or not you want to travel to a set state. Just type in the state of your choosing and you will see the total cases, deaths, and death ratio. With this up to date stats combined with local population we will determine if this is a high risk area or not. Stay safe ladies and gents… For Connecticut residents</P>
-      <!--<img src="https://placehold.it/900x175&text=Responsive Ads - ZURB Playground/333" alt="advertisement for deep fried Twinkies"> -->
+      <ul>
+        <li>Choose a state from the dropdown menu where you would like to go</li>
+        <li>A modal with stats and risk assessment for that state will be generated</li>
+        <li>Choose to see a list of national parks available, or search for a new state.</li>
+        <li>Enjoy a low COVID-risk activity in these quarantine times! </li>
+      </ul>
     </div>
   </div>
-  <!-- / logo and ad break -->
 
   <br>
 
@@ -39,13 +42,14 @@
     <button class="menu-icon" type="button" data-toggle></button>
     <div class="title-bar-title">Menu</div>
   </div>
-          <!----------------subheader----------------->
+          <!----------------subheader starts----------------->
   <div class="top-bar" id="main-menu">
     <ul class="menu vertical medium-horizontal expanded medium-text-center" data-responsive-menu="drilldown medium-dropdown">
       <li class="has-submenu"><a href="#">CDC</a>
         <ul class="submenu menu vertical" data-submenu>
           <li><a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html">COVID Home</a></li>
           <li><a href="https://covid.cdc.gov/covid-data-tracker/index.html#cases_casesinlast7days">Data Tracker</a></li>
+          <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/how-level-is-determined.html">Risk Assesment</a></li>
           <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">Frequently Asked Questions</a></li>
         </ul>
       </li>
@@ -56,11 +60,11 @@
           <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Advice for the public</a></li>
         </ul>
       </li>
-      <li class="has-submenu"><a href="#">State Parks</a>
+      <li class="has-submenu"><a href="#">National Parks</a>
         <ul class="submenu menu vertical" data-submenu>
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
+          <li><a href="https://www.nps.gov/planyourvisit/index.htm">Plan Your Visit</a></li>
+          <li><a href="https://www.nps.gov/learnandexplore/index.htm">Learn and Explore</a></li>
+          <li><a href="https://www.nps.gov/getinvolved/index.htm">Get Involved</a></li>
         </ul>
       </li>
       
@@ -79,44 +83,119 @@
     </a> 
   </div>
 <!---->
-        <div class="media-object">
+        <div class="media-object medium-4 columns">
 
-          <!--create 2 buttons from and to-->
+          <!--this creates drop down to choose state codes-->
           <form id="covid-form" class="top-bar-right">
-            <ul class="menu">
-              <li><input id="inpt" type="search" placeholder="To US State"></li>
+            <select id="inpt" name="stateCodes">
+              <option value="al">Alabama</option>
+              <option value="ak">Alaska</option>
+              <option value="az">Arizona</option>
+              <option value="ar">Arkansas</option>
+              <option value="ca">California</option>
+              <option value="co">Colorado</option>
+              <option value="ct">Connecticut</option>
+              <option value="de">Delaware</option>
+              <option value="fl">Florida</option>
+              <option value="ga">Georgia</option>
+              <option value="hi">Hawaii</option>
+              <option value="id">Idaho</option>
+              <option value="il">Illinois</option>
+              <option value="in">Indiana</option>
+              <option value="ia">Iowa</option>
+              <option value="ks">Kansas</option>
+              <option value="ky">Kentucky</option>
+              <option value="la">Louisiana</option>
+              <option value="me">Maine</option>
+              <option value="md">Maryland</option>
+              <option value="ma">Massachusetts</option>
+              <option value="mi">Michigan</option>
+              <option value="mn">Minnesota</option>
+              <option value="ms">Mississippi</option>
+              <option value="mo">Missouri</option>
+              <option value="mt">Montana</option>
+              <option value="ne">Nebraska</option>
+              <option value="nv">Nevada</option>
+              <option value="nh">New Hampshire</option>
+              <option value="nj">New Jersey</option>
+              <option value="nm">New Mexico</option>
+              <option value="ny">New york</option>
+              <option value="nc">North Carolina</option>
+              <option value="nd">North Dakota</option>
+              <option value="oh">Ohio</option>
+              <option value="ok">Oklahoma</option>
+              <option value="or">Oregon</option>
+              <option value="pa">Pennsylvania</option>
+              <option value="ri">Rhode Island</option>
+              <option value="sc">South Carolina</option>
+              <option value="sd">South Dakota</option>
+              <option value="tn">Tennessee</option>
+              <option value="tx">Texas</option>
+              <option value="ut">Utah</option>
+              <option value="vt">Vermont</option>
+              <option value="va">Virginia</option>
+              <option value="wa">Washington</option>
+              <option value="wv">West Virginia</option>
+              <option value="wi">Wisconsin</option>
+              <option value="wy">Wyoming</option>
+
               <li><input id="submit" type="submit"></li>
             </ul>
           </form>
 
-          <div  id="stateHeading">
-            <br>
-          </div>
-          <table class="table">
-            <thead>
-              <tr>
-                <!-- The scope attribute specifies that this is a header for a column -->
-                <th scope="col">Total Cases</th>
-                <th scope="col">Active Positive</th>
-                <th scope="col">Deaths</th>
-                <th scope="col">Death Ratio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Insert additional rows of stats herehere -->
-            </tbody>
-          </table>
-          <div id="totalPopulation">
-            <div id="modal">
+          <div  id="stateHeading"></div>            
+          <div  id="dateOfStat"></div>
+
+        </div>
+
+        <!----------modal html code here=== Farrah-->
+   <div id="modal">
+   <!---- <button id="modalBtn">Open Modal</button> -->
+        <div id="modalBox" class="modal">
+          <div class="modal-content">
+            <div class="modal-header"></div>
+            <span class="close">&times</span>
+            <h2>Here is the data for the state you selected.</h2>
+
+            <!--this id displays risk algorithm form covid.js-->
+            <h4 id="pRisk"></h4>
+            
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <!-- The scope attribute specifies that this is a header for a column -->
+                    <th scope="col">Total Testing</th>
+                    <th scope="col">Total Positives</th>
+                    <th scope="col">Total Negatives</th>
+                    <th scope="col">Total Deaths</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Insert additional rows of stats here -->
+                </tbody>
+              </table>
+              
+            </div>
+            <div class="modal-footer">
+              <h3>Would you like to travel here?</h3>
+              <button id="parklist">
+                <a href="#natParks">
+                See Parks
+                </a>  
+              </button>
+              <button id="close-modal">
+                <a href="#covid-form">
+                New Search
+              </a>
+              </button>
             </div>
           </div>
         </div>
+      </div> 
   </div>
 
-  <!----------modal html code here=== Farrah-->
-  <div id="modal">
-
-  </div>
+  
 <!--------------modal needs button.after click page will populate on the next div-->
 <div id="parkList">
   <!-------links for parks ===== danielli-------->
@@ -126,31 +205,19 @@
   <div class="row expanded callout secondary">
 
     <div class="large-4 columns">
-      <h5>FLICKR IMAGES</h5>
-      <div class="row small-up-4">
+      <h5 id="natParks">National Parks For Selected States</h5>
+      <div class="row lg-up-4">
+        <div id="parkResults">
+      
+        </div>
+        <!--<div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
         <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
-        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
-        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
-        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
-        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
-        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
-        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
-        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
+        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div> -->
       </div>
 
     </div>
 
-    <div class="large-4 columns">
-      <h5>FLICKR IMAGES</h5>
-      <span class="secondary label">Space</span>
-      <span class="secondary label">Galaxies</span>
-      <span class="secondary label">Milky Way</span>
-      <span class="secondary label">Black Holes</span>
-      <span class="secondary label">Rebels</span>
-      <span class="secondary label">Death Star</span>
-      <span class="secondary label">Republic</span>
-      <span class="secondary label">R2D2</span>
-    </div>
+   
 
     <div class="large-4 columns">
       <h5>Programmers</h5>
@@ -168,15 +235,12 @@
 
     <div class="medium-6 columns">
       <ul class="menu">
-        <li><a href="#">Legal</a></li>
-        <li><a href="#">Partner</a></li>
-        <li><a href="#">Explore</a></li>
       </ul>
     </div>
 
     <div class="medium-6 columns">
       <ul class="menu align-right">
-        <li class="menu-text">Copyright © 2099 Random Mag</li>
+        <li class="menu-text">Copyright © The Coding Covids</li>
       </ul>
     </div>
   </div>
@@ -185,9 +249,7 @@
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+  </body>
     <script src="./covid.js"></script>
   </body>
 </html>
