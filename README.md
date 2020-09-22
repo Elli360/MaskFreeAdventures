@@ -39,7 +39,7 @@ National Park Service Data API
 
 With the pandemic at large, social and economic activities have been adversely affected. There’s no indication to whether this virus will subside or worsen. This website should keep you in the know. With the latest CDC and WHO updates, as well as a COVID tracker API, you will decide whether or not you want to travel to a particular state. Just choose the state from the drop-down menu and you will see the total tests, positives, negatives, and deaths.  With these up-to-date stats we will determine if this is a high-risk area or not.
 <br>
-A display of local national parts will be displayed once a particular state is chosen. National parks are highly recommended for their inherently low transmissible rate. They provide large vacuous space where the six-feet rule could easily be accomplished. The reception of UV light is another reason why these outdoor parks are so effective at reducing transmission. Consequently, providing weary travelers or quarantine-crazed individuals a safe and entertaining alternative the way nature intended.
+A display of local national parts will be displayed once a particular state is chosen. National parks are highly recommended for their inherently low transmissible rate. They provide large vacuous space where the six-feet rule could easily be accomplished. The profusion of UV light ( a covid killer) is another reason why these outdoor parks are so effective at reducing transmission. Consequently, providing weary travelers or quarantine-crazed individuals a safe and entertaining alternative the way nature intended.
 <br>
 Stay safe ladies and gents…
 <br>
