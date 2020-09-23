@@ -13,8 +13,8 @@
 <header>
   <!-- Sub Navigation -->
   <div class="top-bar">
-    <div class="top-bar-left">
-     <h3>Fellow Travelers...</h3>
+    <div class="row-1">
+     <h2>Mask Free Adventures</h2>
     </div>
    
   </div>
@@ -26,8 +26,7 @@
       <img src="./img/mask-crusaider.jpg" alt="mask glasses">
     </div>
     <div class="medium-8 columns">
-      <h2>Mask Free Adventures</h2>
-      <ul>
+      <p>With the pandemic at large, social and economic activities have been adversely affected. There’s no indication to whether this virus will subside or worsen. This app should keep you in the know. With the latest CDC and WHO updates, as well as a COVID tracker API, you will decide whether or not you want to travel to a particular state. Just choose the state from the drop-down menu and you will see the total tests, positives, negatives, and deaths. With these up-to-date stats we will determine if this is a high-risk area or not.</p>      <ul>
         <li>Choose a state from the dropdown menu where you would like to go</li>
         <li>A modal with stats and risk assessment for that state will be generated</li>
         <li>Choose to see a list of national parks available, or search for a new state.</li>
@@ -139,7 +138,7 @@
               <option value="wi">Wisconsin</option>
               <option value="wy">Wyoming</option>
 
-              <li><input id="submit" type="submit"></li>
+              <li><input id="submit" class= "submit-btn" type="submit"></li>
             </ul>
           </form>
 
@@ -148,7 +147,7 @@
 
         </div>
 
-        <!----------modal html code here=== Farrah-->
+        
    <div id="modal">
    <!---- <button id="modalBtn">Open Modal</button> -->
         <div id="modalBox" class="modal">
@@ -198,55 +197,47 @@
   
 <!--------------modal needs button.after click page will populate on the next div-->
 <div id="parkList">
-  <!-------links for parks ===== danielli-------->
 </div>
 
-<footer>
-  <div class="row expanded callout secondary">
-
-    <div class="large-4 columns">
+<div class="row expanded callout secondary">
       <h5 id="natParks">National Parks For Selected States</h5>
-      <div class="row lg-up-4">
-        <div id="parkResults">
-      
+      <div>
+        <div id="parkResults" style="display:flex; justify-content:center; flex-direction:row; flex-wrap:wrap">
         </div>
         <!--<div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
         <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
         <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div> -->
       </div>
+  </div>
 
-    </div>
+<!-------Separate footer-------->
 
-   
 
-    <div class="large-4 columns">
-      <h5>Programmers</h5>
+
+<footer>
+  <div class="container">
+  <div class="row footer-row">
+    <div class="col-xs-12 col-sm-7 col-md-4 footer-left-wrap">
+      <div class="footer-left-content">
+        <h6>Programmers</h6>
       <p>
-        <ul>
-          <li>Danielli Franquim</li>
-          <li>Farrah Heath</li>
-          <li>Luis Calderin</li>
-        </ul>
+         <ul>
+            <li>Danielli Franquim</li>
+            <li>Farrah Heath</li>
+            <li>Luis Calderin</li>
+         </ul>
       </p>
     </div>
-
   </div>
-  <div class="row expanded">
-
-    <div class="medium-6 columns">
-      <ul class="menu">
-      </ul>
-    </div>
-
-    <div class="medium-6 columns">
+  <div class="row footer-row">
+    <div class="footer-copy col-sm-2">
       <ul class="menu align-right">
-        <li class="menu-text">Copyright © The Coding Covids</li>
+        <li class="menu-text"> © Copyright 2020  The Coding Covids</li>
       </ul>
     </div>
   </div>
-
+</div>
 </footer>
-
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   </body>

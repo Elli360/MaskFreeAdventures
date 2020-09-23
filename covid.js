@@ -48,8 +48,10 @@ $(document).foundation();
       var posIncAverage = (parseInt(response.positiveIncrease))/(parseInt(response.totalTestResultsIncrease))*100;
       if(posIncAverage> 5)  {
        $("#pRisk").html("HIGH RISK");
+       $("#pRisk").attr("class", "red");
       } else if(posIncAverage< 5) {
         $("#pRisk").html("LOW RISK");
+        $("#pRisk").attr("class", "green");
       }
 
             //inbedding the second api call withing the eventlistener to trigger it simultanaeously with the first
@@ -76,12 +78,15 @@ $(document).foundation();
       var titleDiv = $("<h5>").text(title);
       var urlDiv = $("<a>").html(urlL);
       urlDiv.attr("href", urlL)
-      var imgUrlDiv = $("<img>").attr("src", imgUrl);
+      var imgUrlDiv = $("<img class='parkImg'>").attr("src", imgUrl);
       var stateDiv = $("<div>").text(stateAbbr);
 
       var parkDiv = $("<div class='park'>").append("<br>");
 
-      parkDiv.append(titleDiv, urlDiv, imgUrlDiv, stateDiv);
+      parkDiv.append(titleDiv);
+      parkDiv.append(urlDiv);
+      parkDiv.append(imgUrlDiv);
+      parkDiv.append(stateDiv);
       
       $("#parkResults").prepend(parkDiv);
          }
