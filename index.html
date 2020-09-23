@@ -141,8 +141,9 @@
               <li><input id="submit" class= "submit-btn" type="submit"></li>
             </ul>
           </form>
-
-          <div  id="stateHeading"></div>            
+          <br>
+          <br>
+          <div  id="stateHeading"></div>      
           <div  id="dateOfStat"></div>
 
         </div>
@@ -178,16 +179,19 @@
             </div>
             <div class="modal-footer">
               <h3>Would you like to travel here?</h3>
-              <button id="parklist">
-                <a href="#natParks">
-                See Parks
+
+                <a href="#parkResults">
+                  <button type="button" id="parklist">
+                     See Parks
+                  </button>
                 </a>  
-              </button>
-              <button id="close-modal">
+          
                 <a href="#covid-form">
-                New Search
+                  <button id="close-modal">
+                     New Search
+                  </button>
               </a>
-              </button>
+
             </div>
           </div>
         </div>
@@ -196,17 +200,10 @@
 
   
 <!--------------modal needs button.after click page will populate on the next div-->
-<div id="parkList">
-</div>
 
 <div class="row expanded callout secondary">
       <h5 id="natParks">National Parks For Selected States</h5>
-      <div>
-        <div id="parkResults" style="display:flex; justify-content:center; flex-direction:row; flex-wrap:wrap">
-        </div>
-        <!--<div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
-        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div>
-        <div class="column"><img class="thumbnail" src="https://placehold.it/75" alt="image of space dog"></div> -->
+        <div id="parkResults" style="display:flex; justify-content:center; flex-direction:row; flex-wrap:wrap"> </div>
       </div>
   </div>
 
